@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeRugDecore — Hand-Tufted Luxury Wool Rugs from Bhadohi, India</title>
+  <meta name="description" content="Discover 235 hand-tufted wool rugs across geometric, round, runner, sport, border, nursery and irregular shapes. Handcrafted by master artisans in Bhadohi, India and shipped worldwide." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Google Fonts: Fraunces (Luxury Editorial Serif) + Work Sans (Clean UI Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen:   '#EDE7DC',
+            paper:   '#FAF8F5',
+            stone:   '#E5DEC9',
+            ink:     '#221C16',
+            inkSoft: '#383028',
+            rust:    '#9C4A32',
+            rustDark:'#7E3A25',
+            sage:    '#687258',
+            brass:   '#B38F52',
+            brassLight: '#D8BE8A',
+            fog:     '#DBD3C2',
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans:  ['"Work Sans"', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: { 'content': '1440px' },
+          boxShadow: {
+            'luxury': '0 20px 45px -15px rgba(34, 28, 22, 0.18)',
+            'card':   '0 10px 30px -10px rgba(34, 28, 22, 0.08)',
+            'card-hover': '0 25px 50px -18px rgba(34, 28, 22, 0.22)',
+            'gold': '0 0 25px rgba(179, 143, 82, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #EDE7DC; color: #221C16; }
+    ::selection { background: #9C4A32; color: #FAF8F5; }
+
+    /* Subtle texture */
+    .texture-subtle {
+      background-image: radial-gradient(#221C16 0.65px, transparent 0.65px);
+      background-size: 24px 24px;
+      opacity: 0.04;
+    }
+
+    /* Transitions & Micro-interactions */
+    .card-lift {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    }
+    .card-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 45px -16px rgba(34, 28, 22, 0.2);
+      border-color: #B38F52;
+    }
+
+    /* Modal / Drawer Transitions */
+    .modal-backdrop { transition: opacity 0.35s ease; }
+    .modal-panel { transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease; }
+    .drawer-panel { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #EDE7DC; }
+    ::-webkit-scrollbar-thumb { background: #DBD3C2; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #B38F52; }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Banner carousel styling */
+    .carousel-slide {
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Shimmer badge animation */
+    @keyframes goldGlow {
+      0%, 100% { box-shadow: 0 0 10px rgba(179, 143, 82, 0.2); }
+      50% { box-shadow: 0 0 22px rgba(179, 143, 82, 0.45); }
+    }
+    .badge-glow { animation: goldGlow 3.5s infinite; }
+  </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-rust selection:text-white">
+
+<!-- ============================================================
+     TOP ANNOUNCEMENT BAR
+     ============================================================ -->
+<aside aria-label="Announcement" class="bg-ink text-paper/90 text-xs py-2.5 px-4 text-center border-b border-brass/20 relative z-50">
+  <div class="max-w-content mx-auto flex items-center justify-center gap-3">
+    <span class="inline-block w-2 h-2 rounded-full bg-brass animate-pulse"></span>
+    <p class="tracking-wide">
+      <span class="font-medium text-brassLight">Monsoon & Launch Offers:</span> Up to 75% Off On Select Rugs · 100% New Zealand Wool · Shipped Worldwide from Bhadohi
+    </p>
+    <a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1 font-semibold text-brassLight hover:text-white underline underline-offset-2 transition-colors ml-2">
+      Shop on Etsy &rarr;
+    </a>
+  </div>
+</aside>
+
+<!-- ============================================================
+     HEADER / NAVIGATION
+     ============================================================ -->
+<header id="siteHeader" class="sticky top-0 inset-x-0 z-40 transition-all duration-300 bg-linen/95 backdrop-blur-md border-b border-fog/60">
+  <div class="max-w-content mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="flex items-center justify-between h-20 md:h-24">
+
+      <!-- Logo & Brand Name -->
+      <a href="#top" class="flex items-center gap-3.5 group" aria-label="HomeRugDecore Home">
+        <div class="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-brass/50 p-0.5 shadow-md group-hover:border-brass group-hover:scale-105 transition-all duration-300">
+          <img src="images/logo.png" alt="HomeRugDecore Emblem" class="w-full h-full object-cover rounded-full" />
+        </div>
+        <div>
+          <span class="font-serif text-2xl md:text-[26px] tracking-tight text-ink font-semibold flex items-center gap-1">
+            Home<span class="text-rust italic font-normal">Rug</span>Decore
+          </span>
+          <span class="block text-[11px] uppercase tracking-[0.2em] text-ink/55 font-medium -mt-0.5">
+            Bhadohi Carpet Craft
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-ink/80">
+        <a href="#top" class="hover:text-rust transition-colors py-1">Home</a>
+        <a href="#banners" class="hover:text-rust transition-colors py-1">Featured</a>
+        <a href="#categories" class="hover:text-rust transition-colors py-1">Categories</a>
+        <a href="#collection" class="hover:text-rust transition-colors py-1">Collection (235)</a>
+        <a href="#craftsmanship" class="hover:text-rust transition-colors py-1">Artisan Heritage</a>
+        <a href="#contact" class="hover:text-rust transition-colors py-1">Inquiry & Contact</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="flex items-center gap-3">
+        <!-- Etsy Store Button -->
+        <a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer"
+           class="hidden sm:inline-flex items-center gap-2 border border-ink/40 text-ink px-4 py-2.5 rounded-full text-xs md:text-sm font-medium hover:border-rust hover:bg-rust hover:text-white transition-all duration-300 shadow-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.7 2.4c-.5 0-.9.4-.9.9v17.4c0 .5.4.9.9.9h9.8c.4 0 .7-.2.8-.6l1.2-3.6c.2-.6-.3-1.2-.9-1.1-.4 0-.7.3-.9.6-.6 1.5-1.1 2.4-3 2.4h-4.1c-.4 0-.7-.3-.7-.7v-5.4h3.3c.9 0 1.3.7 1.5 1.6.1.4.4.7.9.7.5 0 .9-.4.9-.9V9.9c0-.5-.4-.9-.9-.9-.4 0-.8.3-.9.7-.2.9-.6 1.5-1.5 1.5H9.9V5.9c0-.4.3-.7.7-.7h3.9c1.7 0 2.1.7 2.6 2 .2.4.5.7.9.7.6 0 1-.6.8-1.1l-1-2.8c-.1-.4-.4-.6-.8-.6H6.7z"/></svg>
+          <span>Etsy Shop</span>
+        </a>
+
+        <!-- Cart / Inquiry Drawer Toggle -->
+        <button id="cartToggle" aria-label="Open your inquiry list"
+                class="relative p-2.5 rounded-full bg-paper/80 border border-fog hover:border-brass text-ink hover:text-rust transition-all shadow-sm">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h15l-1.5 9.5a2 2 0 01-2 1.7H8.6a2 2 0 01-2-1.7L5 4H2"/><circle cx="9" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></svg>
+          <span id="cartBadge" class="hidden absolute -top-1 -right-1 bg-rust text-white text-[11px] font-bold leading-none w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-bounce">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menuToggle" aria-label="Open menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-full bg-paper/80 border border-fog text-ink">
+          <svg id="iconMenu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <svg id="iconClose" class="hidden" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="lg:hidden hidden bg-paper border-t border-fog px-6 py-6 space-y-4 shadow-xl">
+    <nav class="flex flex-col gap-3 font-serif text-lg text-ink">
+      <a href="#top" class="mobile-link py-1 hover:text-rust">Home</a>
+      <a href="#banners" class="mobile-link py-1 hover:text-rust">Featured Banners</a>
+      <a href="#categories" class="mobile-link py-1 hover:text-rust">Categories</a>
+      <a href="#collection" class="mobile-link py-1 hover:text-rust">Full Collection (235 Rugs)</a>
+      <a href="#craftsmanship" class="mobile-link py-1 hover:text-rust">Bhadohi Heritage</a>
+      <a href="#contact" class="mobile-link py-1 hover:text-rust">Inquiry & Contact</a>
+    </nav>
+    <div class="pt-4 border-t border-fog/60 flex flex-col gap-3">
+      <a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center gap-2 bg-ink text-paper py-3 rounded-full text-sm font-medium">
+        Shop on Etsy
+      </a>
+      <a href="https://wa.me/918577887978" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center gap-2 bg-sage text-white py-3 rounded-full text-sm font-medium">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO BANNER SHOWCASE & SLIDER
+     ============================================================ -->
+<section id="banners" class="relative pt-6 md:pt-10 pb-12 overflow-hidden">
+  <div class="max-w-content mx-auto px-5 sm:px-8 lg:px-12">
+
+    <!-- Interactive Carousel Container -->
+    <div class="relative rounded-2xl overflow-hidden shadow-luxury border-2 border-brass/40 bg-ink group">
+
+      <!-- Slides Wrapper -->
+      <div id="bannerCarousel" class="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[480px]">
+        <!-- Slide 1 -->
+        <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-700 pointer-events-auto">
+          <img src="images/banner.png" alt="Home Rug Decore — Weave Comfort, Create Home" class="w-full h-full object-cover object-center" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700 pointer-events-none">
+          <img src="images/banner1.png" alt="Home Rug Decore — 75% Off Monsoon Sales & Etsy Shop" class="w-full h-full object-cover object-center" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-700 pointer-events-none">
+          <img src="images/banner2.png" alt="Home Rug Decore — Celebrate the Launch & Free Shipping" class="w-full h-full object-cover object-center" />
+        </div>
+      </div>
+
+      <!-- Left / Right Navigation Controls -->
+      <button id="bannerPrev" aria-label="Previous Banner"
+              class="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 w-11 h-11 md:w-13 md:h-13 rounded-full bg-ink/75 hover:bg-ink text-paper flex items-center justify-center backdrop-blur-md border border-white/20 shadow-lg transition-all opacity-80 hover:opacity-100 hover:scale-105">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button id="bannerNext" aria-label="Next Banner"
+              class="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 w-11 h-11 md:w-13 md:h-13 rounded-full bg-ink/75 hover:bg-ink text-paper flex items-center justify-center backdrop-blur-md border border-white/20 shadow-lg transition-all opacity-80 hover:opacity-100 hover:scale-105">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+
+      <!-- Indicator Dots -->
+      <div id="bannerDots" class="absolute bottom-4 inset-x-0 flex items-center justify-center gap-2.5 z-10">
+        <button data-slide="0" aria-label="Go to banner 1" class="banner-dot w-8 h-2.5 rounded-full bg-brass transition-all duration-300"></button>
+        <button data-slide="1" aria-label="Go to banner 2" class="banner-dot w-2.5 h-2.5 rounded-full bg-paper/60 hover:bg-paper transition-all duration-300"></button>
+        <button data-slide="2" aria-label="Go to banner 3" class="banner-dot w-2.5 h-2.5 rounded-full bg-paper/60 hover:bg-paper transition-all duration-300"></button>
+      </div>
+
+    </div>
+
+    <!-- Hero Value Highlights -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+      <div class="bg-paper p-4 rounded-xl border border-fog/80 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-brass/15 text-brass flex items-center justify-center shrink-0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div>
+          <h4 class="font-serif text-sm font-semibold text-ink">Bhadohi Heritage</h4>
+          <p class="text-xs text-ink/60 mt-0.5">Centuries of loom artistry</p>
+        </div>
+      </div>
+      <div class="bg-paper p-4 rounded-xl border border-fog/80 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-rust/15 text-rust flex items-center justify-center shrink-0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C7 6 4 10 4 14a8 8 0 0016 0c0-4-3-8-8-12z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-serif text-sm font-semibold text-ink">100% NZ Wool</h4>
+          <p class="text-xs text-ink/60 mt-0.5">High-density plush pile</p>
+        </div>
+      </div>
+      <div class="bg-paper p-4 rounded-xl border border-fog/80 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-sage/15 text-sage flex items-center justify-center shrink-0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-serif text-sm font-semibold text-ink">Custom Shapes</h4>
+          <p class="text-xs text-ink/60 mt-0.5">Made-to-measure sizing</p>
+        </div>
+      </div>
+      <div class="bg-paper p-4 rounded-xl border border-fog/80 shadow-sm flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-brass/15 text-brass flex items-center justify-center shrink-0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <h4 class="font-serif text-sm font-semibold text-ink">Direct Global Export</h4>
+          <p class="text-xs text-ink/60 mt-0.5">Tracked door delivery</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     HERO EDITORIAL INTRO
+     ============================================================ -->
+<section id="top" class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 py-10 md:py-16">
+  <div class="grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brass/15 text-brass font-medium text-xs tracking-wider uppercase mb-5 border border-brass/30">
+        <span class="w-1.5 h-1.5 rounded-full bg-brass"></span>
+        Handcrafted in Bhadohi, Uttar Pradesh
+      </div>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.08] tracking-tight">
+        Rugs woven by master artisans, built to outlast trends by generations.
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-ink/75 max-w-2xl leading-relaxed">
+        Every HomeRugDecore piece is hand-tufted knot by knot with 100% natural New Zealand wool in India’s legendary carpet capital. Explore our complete collection of 235 bespoke rugs or commission custom dimensions tailored for your interior.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#collection" class="inline-flex items-center gap-2 bg-ink text-paper px-8 py-4 rounded-full text-[15px] font-medium hover:bg-rust transition-all duration-300 shadow-md">
+          <span>Explore All 235 Rugs</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-7 py-4 rounded-full text-[15px] font-medium border border-ink/40 text-ink hover:border-rust hover:text-rust transition-all duration-300">
+          <span>Order via Etsy</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative">
+      <div class="relative rounded-2xl overflow-hidden shadow-luxury border-2 border-brass/40">
+        <img src="images/craftsmanship.png" alt="Close-up detail of hand-tufted rainbow wool loops" class="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 text-paper">
+          <span class="text-xs uppercase tracking-widest text-brassLight font-semibold">Artisan Detail</span>
+          <p class="font-serif text-lg sm:text-xl font-medium mt-1">Dense 100% New Zealand Wool Loops</p>
+          <p class="text-xs text-paper/75 mt-0.5">Hand-sheared & sculpted for tactile luxury</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SHOP BY CATEGORY TILES
+     ============================================================ -->
+<section id="categories" class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 py-16 md:py-24 border-t border-fog/70">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+    <div>
+      <span class="text-xs uppercase tracking-[0.2em] text-rust font-semibold">Curated Silhouettes</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink mt-2">Shop by Category</h2>
+    </div>
+    <p class="text-ink/70 max-w-md text-sm md:text-base">
+      Select any category to filter our 235 handwoven rugs by form, silhouette, and interior aesthetics.
+    </p>
+  </div>
+
+  <div id="categoryTiles" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+    <!-- Populated dynamically via JS with real photography -->
+  </div>
+</section>
+
+<!-- ============================================================
+     THE FULL COLLECTION (235 RUGS)
+     ============================================================ -->
+<section id="collection" class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 py-16 md:py-24 border-t border-fog/70">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+    <div>
+      <span class="text-xs uppercase tracking-[0.2em] text-rust font-semibold">Handmade Catalog</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink mt-2">The Complete Rug Collection</h2>
+    </div>
+
+    <!-- Search & Sort Controls -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+      <div class="relative flex-1 sm:w-72">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="absolute left-4 top-1/2 -translate-y-1/2 text-ink/40"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="searchInput" type="search" placeholder="Search by name, SKU, or color…"
+               class="w-full bg-paper border border-fog/90 rounded-full pl-11 pr-4 py-3 text-sm focus:border-brass focus:ring-1 focus:ring-brass outline-none shadow-sm transition-all" />
+      </div>
+
+      <select id="sortSelect" aria-label="Sort rugs"
+              class="bg-paper border border-fog/90 rounded-full px-4 py-3 text-sm focus:border-brass outline-none shadow-sm text-ink font-medium">
+        <option value="default">Featured (Catalog Order)</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A to Z</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Filter Pills Bar -->
+  <div id="filterBar" class="sticky top-20 md:top-24 z-20 bg-linen/95 backdrop-blur-md py-3.5 -mx-5 px-5 sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12 flex gap-2.5 overflow-x-auto no-scrollbar mb-8 border-b border-fog/60">
+    <!-- Filter pills inserted by JS -->
+  </div>
+
+  <!-- Results Count & Active Category Indicator -->
+  <div class="flex items-center justify-between text-sm text-ink/60 mb-8">
+    <p id="resultsCount">Showing 235 rugs</p>
+    <p class="hidden sm:block text-xs uppercase tracking-wider text-ink/45">Hand-Tufted · 100% Wool · Bhadohi</p>
+  </div>
+
+  <!-- Rugs Grid -->
+  <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-7">
+    <!-- 235 cards generated by JS -->
+  </div>
+
+  <!-- Empty State -->
+  <div id="emptyState" class="hidden text-center py-20 bg-paper rounded-2xl border border-fog/80 my-8">
+    <div class="w-16 h-16 mx-auto rounded-full bg-rust/10 text-rust flex items-center justify-center mb-4">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    </div>
+    <h3 class="font-serif text-2xl text-ink">No matching rugs found</h3>
+    <p class="text-ink/60 text-sm max-w-sm mx-auto mt-2">Try clearing your search term or selecting another category.</p>
+    <button id="resetSearchBtn" class="mt-5 px-6 py-2.5 rounded-full bg-ink text-paper text-sm hover:bg-rust transition-colors">
+      View All Rugs
+    </button>
+  </div>
+
+  <!-- Load More / Pagination Bar -->
+  <div id="loadMoreContainer" class="mt-14 text-center">
+    <button id="loadMoreBtn" class="inline-flex items-center gap-2 bg-paper border border-ink/40 text-ink px-10 py-4 rounded-full text-sm font-medium hover:bg-ink hover:text-paper transition-all duration-300 shadow-md">
+      <span>Load More Rugs</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <p id="pageStats" class="text-xs text-ink/50 mt-3"></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CRAFTSMANSHIP & STORY OF BHADOHI
+     ============================================================ -->
+<section id="craftsmanship" class="bg-paper border-y border-fog/80 py-20 md:py-28 relative">
+  <div class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    
+    <div class="lg:col-span-6 relative">
+      <div class="relative rounded-2xl overflow-hidden shadow-luxury border-2 border-brass/40">
+        <img src="images/banner.png" alt="Bhadohi Artisan Carpet Showroom" class="w-full h-80 sm:h-96 md:h-[460px] object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-paper">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.png" alt="Emblem" class="w-12 h-12 rounded-full border border-brass/60" />
+            <div>
+              <p class="font-serif text-lg font-semibold text-brassLight">Bhadohi Master Loom Guild</p>
+              <p class="text-xs text-paper/75">Carpet Capital of India · GI Tagged Heritage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-6">
+      <span class="text-xs uppercase tracking-[0.2em] text-sage font-semibold">Generations of Mastery</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink mt-2 leading-tight">
+        Bhadohi: Where Every Thread Tells an Artisan Story.
+      </h2>
+      <p class="mt-6 text-ink/75 leading-relaxed text-base">
+        For over four centuries, the town of Bhadohi in Uttar Pradesh has preserved India’s most revered weaving traditions. Every single HomeRugDecore rug is tufted by hand with New Zealand wool, washed in clean mineral water, hand-sheared for velvety softness, and finished with organic backing.
+      </p>
+      <p class="mt-4 text-ink/75 leading-relaxed text-base">
+        By partnering directly with artisan families, we bypass middlemen to ensure ethical wages for master tufters and direct-to-consumer pricing for homeowners across 30+ countries worldwide.
+      </p>
+
+      <div class="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-fog/80">
+        <div>
+          <p class="font-serif text-3xl md:text-4xl text-rust font-semibold">100%</p>
+          <p class="text-xs text-ink/65 mt-1">Pure New Zealand Wool</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl md:text-4xl text-brass font-semibold">235</p>
+          <p class="text-xs text-ink/65 mt-1">Signature Designs</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl md:text-4xl text-sage font-semibold">30+</p>
+          <p class="text-xs text-ink/65 mt-1">Countries Shipped</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     MONSOON & ETSY PROMO CALLOUT
+     ============================================================ -->
+<section class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 py-16 md:py-20">
+  <div class="relative rounded-2xl overflow-hidden bg-gradient-to-r from-ink via-inkSoft to-ink text-paper p-8 md:p-14 border border-brass/40 shadow-luxury flex flex-col lg:flex-row items-center justify-between gap-8">
+    <div class="max-w-xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brass/20 text-brassLight text-xs font-semibold uppercase tracking-wider mb-4 border border-brass/30">
+        Official Etsy Storefront
+      </div>
+      <h3 class="font-serif text-3xl md:text-4xl text-paper leading-tight">
+        Prefer Instant Online Checkout & Buyer Protection?
+      </h3>
+      <p class="mt-4 text-paper/75 text-sm md:text-base leading-relaxed">
+        Browse our verified reviews, ready-to-ship inventory, and secure Etsy checkout with international buyer guarantee.
+      </p>
+    </div>
+    <a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-3 bg-brass hover:bg-brassLight text-ink px-8 py-4 rounded-full text-base font-semibold shadow-gold transition-all duration-300 hover:scale-105 shrink-0">
+      <span>Visit Official Etsy Store</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT & DIRECT INQUIRY SECTION
+     ============================================================ -->
+<section id="contact" class="max-w-content mx-auto px-5 sm:px-8 lg:px-12 py-16 md:py-24 border-t border-fog/80">
+  <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+
+    <div class="lg:col-span-5">
+      <span class="text-xs uppercase tracking-[0.2em] text-rust font-semibold">Direct Artisan Channel</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink mt-2 leading-tight">
+        Send Your Order Inquiry
+      </h2>
+      <p class="mt-6 text-ink/75 leading-relaxed text-sm md:text-base">
+        Whether you are choosing from our 235 signature designs, requesting custom measurements, or inquiring for trade/wholesale orders, write to us directly. Every inquiry goes straight to our inbox at <strong class="text-ink">homerugscreation@gmail.com</strong> and our Bhadohi workshop team replies within 24 hours.
+      </p>
+
+      <div class="mt-8 space-y-4 text-sm">
+        <div class="flex items-center gap-3.5 p-3.5 bg-paper rounded-xl border border-fog/70">
+          <div class="w-10 h-10 rounded-full bg-rust/15 text-rust flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <span class="block text-xs text-ink/55 uppercase tracking-wider font-semibold">Official Email</span>
+            <a href="mailto:homerugscreation@gmail.com" class="font-medium text-ink hover:text-rust transition-colors">homerugscreation@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3.5 p-3.5 bg-paper rounded-xl border border-fog/70">
+          <div class="w-10 h-10 rounded-full bg-sage/15 text-sage flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.3c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.5-.2.8-.1l1.8.9c.2.1.4.2.5.4.1.2.1.9-.1 1.5z"/></svg>
+          </div>
+          <div>
+            <span class="block text-xs text-ink/55 uppercase tracking-wider font-semibold">Instant WhatsApp</span>
+            <a href="https://wa.me/910000000000?text=Hello%20HomeRugDecore%2C%20I%20am%20interested%20in%20your%20hand-tufted%20rugs" target="_blank" rel="noopener noreferrer" class="font-medium text-ink hover:text-sage transition-colors">+91 WhatsApp Support</a>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3.5 p-3.5 bg-paper rounded-xl border border-fog/70">
+          <div class="w-10 h-10 rounded-full bg-brass/15 text-brass flex items-center justify-center shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <span class="block text-xs text-ink/55 uppercase tracking-wider font-semibold">Atelier Location</span>
+            <span class="font-medium text-ink">Bhadohi, Uttar Pradesh 221401, India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workshop Map -->
+      <div class="mt-6 rounded-xl overflow-hidden border border-fog/80 h-48 shadow-sm">
+        <iframe title="Map of Bhadohi, Uttar Pradesh, India" src="https://www.google.com/maps?q=Bhadohi,Uttar+Pradesh,India&output=embed"
+                class="w-full h-full grayscale-[25%]" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!-- Inquiry Booking Form -->
+    <div class="lg:col-span-7">
+      <div class="bg-paper p-7 sm:p-10 rounded-2xl border-2 border-brass/40 shadow-luxury relative">
+        <h3 class="font-serif text-2xl md:text-3xl text-ink font-semibold">Book an Order / Quote Inquiry</h3>
+        <p class="text-sm text-ink/65 mt-1">
+          Inquiries are delivered directly to <span class="font-semibold text-rust">homerugscreation@gmail.com</span>.
+        </p>
+
+        <!-- Selected Rugs Preview in Form -->
+        <div id="formCartNotice" class="mt-5 p-4 rounded-xl bg-linen/70 border border-fog/90">
+          <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-ink/70 mb-2">
+            <span>Rugs Selected in Inquiry:</span>
+            <span id="formCartCount">0 items</span>
+          </div>
+          <div id="formCartList" class="max-h-36 overflow-y-auto divide-y divide-fog/60 text-xs">
+            <p class="text-ink/50 py-2 italic">No rugs added to inquiry list yet. Browse the collection above to add rugs, or submit a custom inquiry below.</p>
+          </div>
+        </div>
+
+        <!-- The Inquiry Form -->
+        <form id="contactInquiryForm" class="mt-6 space-y-4">
+          <!-- FormSubmit Configuration Fields -->
+          <input type="hidden" name="_subject" value="New Rug Inquiry — HomeRugDecore Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_autoresponse" value="Thank you for inquiring with HomeRugDecore! We received your rug details and our artisan team in Bhadohi will reply within 24 hours.">
+          <input type="hidden" id="formRugsField" name="Selected Rugs" value="None">
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="cName" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Full Name *</label>
+              <input required id="cName" name="Full Name" type="text" placeholder="Your Name"
+                     class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm" />
+            </div>
+            <div>
+              <label for="cEmail" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Email Address *</label>
+              <input required id="cEmail" name="_replyto" type="email" placeholder="you@example.com"
+                     class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="cPhone" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Phone / WhatsApp *</label>
+              <input required id="cPhone" name="Phone / WhatsApp" type="tel" placeholder="+1 (555) 000-0000"
+                     class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm" />
+            </div>
+            <div>
+              <label for="cCountry" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Country / Destination *</label>
+              <input required id="cCountry" name="Country" type="text" placeholder="e.g. United States, UK, India"
+                     class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm" />
+            </div>
+          </div>
+
+          <div>
+            <label for="cAddress" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Shipping Address / City</label>
+            <input id="cAddress" name="Shipping Address" type="text" placeholder="Street, City, Postal Code"
+                   class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm" />
+          </div>
+
+          <div>
+            <label for="cNotes" class="block text-xs font-semibold uppercase tracking-wider text-ink/70 mb-1.5">Custom Sizing / Specific Requirements</label>
+            <textarea id="cNotes" name="Custom Requests / Notes" rows="3" placeholder="Tell us about desired custom sizes, shapes, or color palette adjustments..."
+                      class="w-full bg-white border border-fog rounded-lg px-4 py-3 text-sm focus:border-brass outline-none shadow-sm resize-none"></textarea>
+          </div>
+
+          <!-- Submission Buttons -->
+          <div class="pt-3 space-y-3">
+            <button id="submitInquiryBtn" type="submit"
+                    class="w-full bg-ink hover:bg-rust text-paper py-4 rounded-full text-base font-semibold transition-all duration-300 shadow-md flex items-center justify-center gap-2">
+              <span>Send Inquiry to homerugscreation@gmail.com</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Dual Instant Fallback Buttons -->
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <button id="directEmailBtn" type="button"
+                      class="py-2.5 px-4 rounded-full border border-ink/30 text-xs font-medium text-ink hover:border-rust hover:text-rust transition-colors flex items-center justify-center gap-1.5">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Open in Email App</span>
+              </button>
+              <button id="directWhatsAppBtn" type="button"
+                      class="py-2.5 px-4 rounded-full border border-sage/40 bg-sage/10 text-xs font-medium text-sage hover:bg-sage hover:text-white transition-all flex items-center justify-center gap-1.5">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.3c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.5-.2.8-.1l1.8.9c.2.1.4.2.5.4.1.2.1.9-.1 1.5z"/></svg>
+                <span>Send via WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <p id="formStatusMsg" class="hidden text-center text-sm py-2"></p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-ink text-paper/80 pt-16 pb-12 border-t-2 border-brass/30">
+  <div class="max-w-content mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-paper/10">
+
+      <!-- Col 1: Brand & Emblem -->
+      <div class="lg:col-span-5 space-y-4">
+        <div class="flex items-center gap-3.5">
+          <img src="images/logo.png" alt="Home Rug Decore Emblem" class="w-14 h-14 rounded-full border border-brass/60" />
+          <div>
+            <p class="font-serif text-2xl text-paper tracking-tight font-semibold">
+              Home<span class="text-rust italic font-normal">Rug</span>Decore
+            </p>
+            <p class="text-xs uppercase tracking-widest text-brassLight font-medium">Bhadohi, India</p>
+          </div>
+        </div>
+        <p class="text-sm text-paper/70 leading-relaxed max-w-sm">
+          Master hand-tufted wool carpets and bespoke area rugs crafted in Bhadohi, Uttar Pradesh. Sourced ethically in 100% New Zealand wool.
+        </p>
+        <p class="text-xs text-brassLight">Direct Artisan Inquiries: <a href="mailto:homerugscreation@gmail.com" class="underline hover:text-white">homerugscreation@gmail.com</a></p>
+      </div>
+
+      <!-- Col 2: Categories -->
+      <div class="lg:col-span-3 space-y-3">
+        <p class="font-serif text-base text-paper font-semibold">Categories</p>
+        <ul class="space-y-2 text-xs md:text-sm text-paper/70">
+          <li><a href="#collection" data-filter="geometric" class="footer-cat-link hover:text-brass transition-colors">Geometric Rugs (110)</a></li>
+          <li><a href="#collection" data-filter="round" class="footer-cat-link hover:text-brass transition-colors">Round Rugs (29)</a></li>
+          <li><a href="#collection" data-filter="runner" class="footer-cat-link hover:text-brass transition-colors">Runner Rugs (22)</a></li>
+          <li><a href="#collection" data-filter="sport" class="footer-cat-link hover:text-brass transition-colors">Sport Rugs (27)</a></li>
+          <li><a href="#collection" data-filter="irregular" class="footer-cat-link hover:text-brass transition-colors">Irregular Shape (5)</a></li>
+          <li><a href="#collection" data-filter="border" class="footer-cat-link hover:text-brass transition-colors">Border Rugs (33)</a></li>
+          <li><a href="#collection" data-filter="nursery" class="footer-cat-link hover:text-brass transition-colors">Nursery Rugs (9)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links & Store -->
+      <div class="lg:col-span-4 space-y-3">
+        <p class="font-serif text-base text-paper font-semibold">Shop & Guarantee</p>
+        <ul class="space-y-2 text-xs md:text-sm text-paper/70">
+          <li><a href="https://homerugdecore.etsy.com" target="_blank" rel="noopener noreferrer" class="hover:text-brass transition-colors flex items-center gap-1">Official Etsy Store &rarr;</a></li>
+          <li><a href="#craftsmanship" class="hover:text-brass transition-colors">About Bhadohi Weaving Tradition</a></li>
+          <li><a href="#contact" class="hover:text-brass transition-colors">Request Custom Sizing</a></li>
+          <li><a href="#contact" class="hover:text-brass transition-colors">Trade & Interior Designer Orders</a></li>
+        </ul>
+        <div class="pt-4">
+          <p class="text-xs uppercase tracking-wider text-brassLight font-semibold mb-2">Artisan Workshop</p>
+          <p class="text-xs text-paper/60">Bhadohi, Uttar Pradesh, 221401, India</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-paper/50">
+      <p>© 2026 HomeRugDecore · All Rights Reserved.</p>
+      <p>Hand-Tufted Wool Rugs · Shipped Worldwide from Bhadohi</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING WHATSAPP BUTTON
+     ============================================================ -->
+<a href="https://wa.me/910000000000?text=Hello%20HomeRugDecore%2C%20I%20am%20interested%20in%20your%20rugs" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+   class="fixed bottom-6 right-6 z-30 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-luxury hover:scale-110 transition-all duration-300">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.3c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.5-.2.8-.1l1.8.9c.2.1.4.2.5.4.1.2.1.9-.1 1.5z"/></svg>
+</a>
+
+<!-- ============================================================
+     CART / INQUIRY LIST DRAWER
+     ============================================================ -->
+<div id="cartDrawer" class="fixed inset-0 z-50 hidden">
+  <div id="cartBackdrop" class="modal-backdrop absolute inset-0 bg-ink/65 opacity-0 backdrop-blur-xs"></div>
+  <div id="cartPanel" class="drawer-panel translate-x-full absolute right-0 top-0 h-full w-full sm:w-[440px] bg-paper flex flex-col shadow-2xl border-l border-brass/40">
+    <div class="flex items-center justify-between px-6 py-6 border-b border-fog/80 bg-linen">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-brass/20 text-brass flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h15l-1.5 9.5a2 2 0 01-2 1.7H8.6a2 2 0 01-2-1.7L5 4H2"/><circle cx="9" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></svg>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl text-ink font-semibold">Your Inquiry List</h3>
+          <p id="drawerCartCount" class="text-xs text-ink/60">0 rugs selected</p>
+        </div>
+      </div>
+      <button id="closeCart" aria-label="Close" class="p-2 text-ink/60 hover:text-rust transition-colors">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div id="cartItems" class="flex-1 overflow-y-auto px-6 py-5 space-y-3.5">
+      <!-- Items inserted by JS -->
+    </div>
+
+    <div class="p-6 border-t border-fog/80 bg-linen/70 space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="text-sm text-ink/70 font-medium">Estimated Value:</span>
+        <span id="cartSubtotal" class="font-serif text-2xl text-rust font-semibold">$0</span>
+      </div>
+      <button id="checkoutInquiryBtn"
+              class="w-full bg-ink hover:bg-rust text-paper py-3.5 rounded-full text-sm font-semibold transition-all shadow-md flex items-center justify-center gap-2">
+        <span>Proceed to Inquiry Booking</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     QUICK VIEW / PRODUCT DETAIL LIGHTBOX MODAL
+     ============================================================ -->
+<div id="detailModal" class="fixed inset-0 z-50 hidden">
+  <div id="detailBackdrop" class="modal-backdrop absolute inset-0 bg-ink/75 opacity-0 backdrop-blur-sm"></div>
+  <div class="relative h-full w-full flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div id="detailPanel" class="modal-panel opacity-0 scale-95 bg-paper w-full max-w-3xl rounded-2xl shadow-2xl border-2 border-brass/50 overflow-hidden relative">
+
+      <button id="closeDetail" aria-label="Close" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-ink/70 hover:bg-ink text-white flex items-center justify-center transition-all">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <div class="grid md:grid-cols-2">
+        <!-- Rug Image Preview -->
+        <div class="relative bg-stone/50 h-72 md:h-auto overflow-hidden">
+          <img id="detailImg" src="" alt="Rug Detail" class="w-full h-full object-cover" />
+          <span id="detailBadge" class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full text-white bg-rust shadow-md"></span>
+        </div>
+
+        <!-- Rug Specifications & Actions -->
+        <div class="p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <p id="detailSku" class="text-xs uppercase tracking-wider text-brass font-bold">HRD-GEO-001</p>
+            <h3 id="detailTitle" class="font-serif text-2xl sm:text-3xl text-ink font-semibold mt-1">Aurora Trellis</h3>
+            <p id="detailPrice" class="font-serif text-2xl text-rust font-semibold mt-2">$289</p>
+
+            <p id="detailDesc" class="text-sm text-ink/70 mt-3 leading-relaxed">
+              Hand-tufted in Bhadohi in pure New Zealand wool with hand-sheared finish.
+            </p>
+
+            <dl class="mt-5 space-y-2 text-xs border-t border-fog/80 pt-4 text-ink/80">
+              <div class="flex justify-between"><dt class="text-ink/50 font-medium">Standard Size:</dt><dd id="detailSize" class="font-semibold text-ink">5x8 ft</dd></div>
+              <div class="flex justify-between"><dt class="text-ink/50 font-medium">Colorway:</dt><dd id="detailColor" class="font-semibold text-ink">Ivory & Rust</dd></div>
+              <div class="flex justify-between"><dt class="text-ink/50 font-medium">Material:</dt><dd class="font-semibold text-ink">100% NZ Wool, Cotton Backing</dd></div>
+              <div class="flex justify-between"><dt class="text-ink/50 font-medium">Craft Technique:</dt><dd class="font-semibold text-ink">Hand-Tufted & Hand-Carved</dd></div>
+              <div class="flex justify-between"><dt class="text-ink/50 font-medium">Origin:</dt><dd class="font-semibold text-ink">Bhadohi, Uttar Pradesh, India</dd></div>
+            </dl>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-fog/80 space-y-2.5">
+            <button id="detailAddCartBtn" class="w-full py-3.5 rounded-full text-sm font-semibold bg-ink text-paper hover:bg-rust transition-colors shadow-sm">
+              Add to Inquiry List
+            </button>
+            <a id="detailWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer"
+               class="w-full py-2.5 rounded-full text-xs font-semibold bg-sage/15 text-sage hover:bg-sage hover:text-white transition-all flex items-center justify-center gap-2">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.3c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l1-1.1c.2-.3.5-.2.8-.1l1.8.9c.2.1.4.2.5.4.1.2.1.9-.1 1.5z"/></svg>
+              <span>Instant WhatsApp Inquiry for This Rug</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     SUCCESS CONFIRMATION MODAL
+     ============================================================ -->
+<div id="successModal" class="fixed inset-0 z-50 hidden">
+  <div class="modal-backdrop absolute inset-0 bg-ink/70"></div>
+  <div class="relative h-full w-full flex items-center justify-center p-6">
+    <div class="modal-panel bg-paper max-w-md w-full rounded-2xl shadow-2xl p-8 text-center border-2 border-brass/50">
+      <div class="w-16 h-16 rounded-full bg-sage/20 text-sage flex items-center justify-center mx-auto mb-5">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h3 class="font-serif text-2xl text-ink font-semibold">Inquiry Dispatched!</h3>
+      <p class="mt-3 text-sm text-ink/75 leading-relaxed">
+        Your rug inquiry has been successfully transmitted to <strong class="text-ink">homerugscreation@gmail.com</strong>.
+      </p>
+      <p class="mt-2 text-xs text-ink/60">
+        Our workshop in Bhadohi will contact you shortly with confirmed pricing, production timeline, and shipping estimates.
+      </p>
+      <button id="closeSuccess" class="mt-6 w-full py-3.5 rounded-full bg-ink text-paper text-sm font-semibold hover:bg-rust transition-colors">
+        Continue Browsing Collection
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CORE JAVASCRIPT
+     ============================================================ -->
+<script>
+  /* =================================================================
+     1. CATALOG DATA (EXACT 235 RUGS MATCHING THE IMAGES)
+     Seven categories matching folders 1 to 235:
+     - Geometric: 110 (rug_1.png to rug_110.png)
+     - Round: 29 (rug_111.png to rug_139.png)
+     - Runner: 22 (rug_140.png to rug_161.png)
+     - Sport: 27 (rug_162.png to rug_188.png)
+     - Irregular: 5 (rug_189.png to rug_193.png)
+     - Border: 33 (rug_194.png to rug_226.png)
+     - Nursery: 9 (rug_227.png to rug_235.png)
+     Total: 235 Rugs
+     ================================================================= */
+  const DESTINATION_EMAIL = 'homerugscreation@gmail.com';
+  const WHATSAPP_NUMBER = '910000000000'; // Replace with actual business WhatsApp
+
+  const CATEGORIES = [
+    { key: 'geometric',  name: 'Geometric Rugs',       count: 110, accent: '#9C4A32', img: 'images/cat_geometric.png' },
+    { key: 'round',      name: 'Round Rugs',           count: 29,  accent: '#687258', img: 'images/cat_round.png' },
+    { key: 'runner',     name: 'Runner Rugs',          count: 22,  accent: '#B38F52', img: 'images/cat_runner.png' },
+    { key: 'sport',      name: 'Sport Rugs',           count: 27,  accent: '#475569', img: 'images/cat_sport.png' },
+    { key: 'irregular',  name: 'Irregular Shape Rugs', count: 5,   accent: '#7E3A25', img: 'images/cat_irregular.png' },
+    { key: 'border',     name: 'Border Rugs',          count: 33,  accent: '#8C6B2F', img: 'images/cat_border.png' },
+    { key: 'nursery',    name: 'Nursery Rugs',         count: 9,   accent: '#9A6B62', img: 'images/cat_nursery.png' },
+  ];
+
+  const ADJECTIVES = ['Aurora','Windsor','Meridian','Solstice','Harbor','Alder','Bramble','Cascade','Dune','Ember',
+    'Fable','Glacier','Hollow','Ivory','Juniper','Kestrel','Lumen','Marlow','Nomad','Opal',
+    'Pearl','Quartz','Ridge','Sable','Terra','Umber','Vale','Willow','Amber','Birch',
+    'Clay','Driftwood','Ecru','Flint','Gable','Hearth','Indigo','Jasper','Linden','Moss'];
+
+  const NOUNS_BY_CAT = {
+    geometric: ['Trellis','Facet','Prism','Lattice','Angles','Mosaic','Chevron','Diamond Weave','Rhombus','Tessellation'],
+    round:     ['Halo','Orbit','Circlet','Ring','Sphere','Rondel','Sunburst','Celestial Circle'],
+    runner:    ['Pathway','Corridor','Passage','Trail','Hallway Weave','Linear Walkway'],
+    sport:     ['Court','Pitch','Arena','Turf Weave','Stadium Line','Athletic Crest'],
+    irregular: ['Formation','Silhouette','Contour','Freeform Curve','Organic Cut'],
+    border:    ['Frame','Perimeter','Edgeline','Bound Weave','Keyline','Medallion Border'],
+    nursery:   ['Cloud','Lullaby','Meadow','Playdate','Storybook','Little Bloom','Pastel Rainbow'],
+  };
+
+  const COLORWAYS = [
+    'Ivory & Terracotta', 'Charcoal & Cream', 'Sage & Oat', 'Indigo & Stone',
+    'Clay & Walnut', 'Blush & Cashmere', 'Deep Ink & Brass', 'Sand & Raw Umber'
+  ];
+
+  const SIZES_BY_CAT = {
+    geometric: ['3x5 ft','4x6 ft','5x8 ft','6x9 ft','8x10 ft','9x12 ft'],
+    round:     ['Round 4 ft','Round 5 ft','Round 6 ft','Round 8 ft'],
+    runner:    ['2x6 ft','2.5x8 ft','2.5x10 ft','3x12 ft'],
+    sport:     ['4x6 ft','5x7 ft','6x9 ft','8x10 ft'],
+    irregular: ['5x7 ft Freeform','6x8 ft Freeform','Custom Organic Cut'],
+    border:    ['4x6 ft','5x8 ft','6x9 ft','8x10 ft','9x12 ft'],
+    nursery:   ['3x5 ft','4x5 ft','4x6 ft','Round 4 ft'],
+  };
+
+  let globalProductIndex = 1;
+
+  function buildCategoryProducts(cat) {
+    const items = [];
+    const nouns = NOUNS_BY_CAT[cat.key];
+    const sizes = SIZES_BY_CAT[cat.key];
+
+    for (let i = 0; i < cat.count; i++) {
+      const currentIdx = globalProductIndex++;
+      const adj = ADJECTIVES[(i * 3 + cat.key.length) % ADJECTIVES.length];
+      const noun = nouns[i % nouns.length];
+      const size = sizes[i % sizes.length];
+      const color = COLORWAYS[(i * 2) % COLORWAYS.length];
+      const skuNumber = String(currentIdx).padStart(3, '0');
+      const basePrice = 149 + ((i * 37) % 430) + (i % 4) * 25;
+      const name = `${adj} ${noun}`;
+
+      items.push({
+        id: `rug-${currentIdx}`,
+        numericId: currentIdx,
+        category: cat.name,
+        categoryKey: cat.key,
+        accent: cat.accent,
+        name,
+        sku: `HRD-${cat.key.slice(0, 3).toUpperCase()}-${skuNumber}`,
+        desc: `Master hand-tufted in Bhadohi, India featuring a ${color.toLowerCase()} palette. 100% pure New Zealand wool with hand-sheared finish.`,
+        size,
+        color,
+        material: '100% Hand-Tufted New Zealand Wool',
+        price: basePrice,
+        img: `images/rugs/rug_${currentIdx}.png`,
+      });
+    }
+    return items;
+  }
+
+  const PRODUCTS = CATEGORIES.flatMap(buildCategoryProducts);
+  const PRODUCTS_BY_ID = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+
+  /* =================================================================
+     2. APP STATE
+     ================================================================= */
+  let activeCategory = 'all';
+  let searchTerm = '';
+  let sortOrder = 'default';
+  let cart = []; // array of product ids
+  const PAGE_SIZE = 32;
+  let visibleCount = PAGE_SIZE;
+
+  /* =================================================================
+     3. BANNER CAROUSEL LOGIC
+     ================================================================= */
+  const bannerSlides = document.querySelectorAll('.carousel-slide');
+  const bannerDots = document.querySelectorAll('.banner-dot');
+  let currentBanner = 0;
+  let bannerTimer = null;
+
+  function showBanner(index) {
+    currentBanner = (index + bannerSlides.length) % bannerSlides.length;
+    bannerSlides.forEach((slide, i) => {
+      slide.classList.toggle('opacity-100', i === currentBanner);
+      slide.classList.toggle('opacity-0', i !== currentBanner);
+      slide.classList.toggle('pointer-events-auto', i === currentBanner);
+      slide.classList.toggle('pointer-events-none', i !== currentBanner);
+    });
+    bannerDots.forEach((dot, i) => {
+      dot.classList.toggle('w-8', i === currentBanner);
+      dot.classList.toggle('w-2.5', i !== currentBanner);
+      dot.classList.toggle('bg-brass', i === currentBanner);
+      dot.classList.toggle('bg-paper/60', i !== currentBanner);
+    });
+  }
+
+  function startBannerTimer() {
+    stopBannerTimer();
+    bannerTimer = setInterval(() => showBanner(currentBanner + 1), 5500);
+  }
+  function stopBannerTimer() {
+    if (bannerTimer) clearInterval(bannerTimer);
+  }
+
+  document.getElementById('bannerPrev').addEventListener('click', () => { showBanner(currentBanner - 1); startBannerTimer(); });
+  document.getElementById('bannerNext').addEventListener('click', () => { showBanner(currentBanner + 1); startBannerTimer(); });
+  bannerDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { showBanner(i); startBannerTimer(); });
+  });
+
+  const bannerBox = document.getElementById('bannerCarousel');
+  bannerBox.addEventListener('mouseenter', stopBannerTimer);
+  bannerBox.addEventListener('mouseleave', startBannerTimer);
+  startBannerTimer();
+
+  /* =================================================================
+     4. RENDER CATEGORY TILES (WITH REAL PHOTOGRAPHY)
+     ================================================================= */
+  const categoryTilesContainer = document.getElementById('categoryTiles');
+  const categoryTileMarkup = (key, name, count, img) => `
+    <button data-cat="${key}" class="categoryTileCard group text-left relative h-40 sm:h-48 rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 border border-fog hover:border-brass focus:outline-none">
+      <img src="${img}" alt="${name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" />
+      <span class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent"></span>
+      <span class="absolute bottom-3 left-3.5 right-3.5 text-paper">
+        <span class="block font-serif text-base sm:text-lg font-semibold leading-tight text-white group-hover:text-brassLight transition-colors">${name}</span>
+        <span class="inline-block text-[11px] uppercase tracking-wider text-paper/75 mt-1 font-medium bg-black/35 px-2 py-0.5 rounded-full backdrop-blur-xs">${count} designs</span>
+      </span>
+    </button>`;
+
+  categoryTilesContainer.innerHTML =
+    categoryTileMarkup('all', 'All Rugs', PRODUCTS.length, 'images/cat_all.png') +
+    CATEGORIES.map(c => categoryTileMarkup(c.key, c.name, c.count, c.img)).join('');
+
+  categoryTilesContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.categoryTileCard');
+    if (!btn) return;
+    setCategory(btn.dataset.cat);
+    document.getElementById('collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // Footer category links
+  document.querySelectorAll('.footer-cat-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      setCategory(link.dataset.filter);
+      document.getElementById('collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  /* =================================================================
+     5. FILTER PILLS & SEARCH
+     ================================================================= */
+  const filterBar = document.getElementById('filterBar');
+  const pillMarkup = (key, label, count) => `
+    <button data-cat="${key}" data-active="${key === 'all'}"
+      class="catPill shrink-0 border border-ink/25 text-ink px-4 py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap transition-all duration-200 hover:border-ink">
+      ${label} <span class="opacity-60 text-xs">(${count})</span>
+    </button>`;
+
+  filterBar.innerHTML = pillMarkup('all', 'All Rugs', PRODUCTS.length) +
+    CATEGORIES.map(c => pillMarkup(c.key, c.name, c.count)).join('');
+
+  function updatePillStyles() {
+    filterBar.querySelectorAll('.catPill').forEach(p => {
+      const isActive = p.dataset.cat === activeCategory;
+      p.setAttribute('data-active', String(isActive));
+      if (isActive) {
+        p.className = 'catPill shrink-0 border border-ink bg-ink text-paper px-4 py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap shadow-sm';
+      } else {
+        p.className = 'catPill shrink-0 border border-ink/25 bg-paper/60 text-ink px-4 py-2 rounded-full text-xs md:text-sm font-medium whitespace-nowrap hover:border-ink';
+      }
+    });
+  }
+
+  filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('.catPill');
+    if (!btn) return;
+    setCategory(btn.dataset.cat);
+  });
+
+  function setCategory(key) {
+    activeCategory = key;
+    visibleCount = PAGE_SIZE; // reset pagination
+    updatePillStyles();
+    renderGrid();
+  }
+
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', (e) => {
+    searchTerm = e.target.value.trim().toLowerCase();
+    visibleCount = PAGE_SIZE;
+    renderGrid();
+  });
+
+  document.getElementById('resetSearchBtn').addEventListener('click', () => {
+    searchInput.value = '';
+    searchTerm = '';
+    activeCategory = 'all';
+    updatePillStyles();
+    renderGrid();
+  });
+
+  document.getElementById('sortSelect').addEventListener('change', (e) => {
+    sortOrder = e.target.value;
+    renderGrid();
+  });
+
+  /* =================================================================
+     6. PRODUCT GRID RENDERING (REAL 235 RUGS)
+     ================================================================= */
+  const grid = document.getElementById('productGrid');
+  const emptyState = document.getElementById('emptyState');
+  const resultsCount = document.getElementById('resultsCount');
+  const loadMoreContainer = document.getElementById('loadMoreContainer');
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  const pageStats = document.getElementById('pageStats');
+
+  function getFilteredProducts() {
+    let filtered = PRODUCTS.filter(p => {
+      const matchCat = activeCategory === 'all' || p.categoryKey === activeCategory;
+      const matchSearch = !searchTerm ||
+        p.name.toLowerCase().includes(searchTerm) ||
+        p.category.toLowerCase().includes(searchTerm) ||
+        p.sku.toLowerCase().includes(searchTerm) ||
+        p.color.toLowerCase().includes(searchTerm);
+      return matchCat && matchSearch;
+    });
+
+    if (sortOrder === 'price-asc') filtered.sort((a, b) => a.price - b.price);
+    else if (sortOrder === 'price-desc') filtered.sort((a, b) => b.price - a.price);
+    else if (sortOrder === 'name-asc') filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+    return filtered;
+  }
+
+  function productCardMarkup(p) {
+    const inCart = cart.includes(p.id);
+    return `
+      <article class="card-lift bg-paper rounded-2xl overflow-hidden border border-fog/85 flex flex-col group relative" data-id="${p.id}">
+        <!-- Image Container -->
+        <div class="relative overflow-hidden aspect-[4/5] bg-stone/40">
+          <img src="${p.img}" alt="${p.name} — Handmade Wool Rug" loading="lazy"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+          
+          <!-- Category Badge -->
+          <span class="absolute top-3.5 left-3.5 text-[11px] font-semibold tracking-wide px-3 py-1 rounded-full text-white shadow-md backdrop-blur-xs"
+                style="background-color: ${p.accent};">
+            ${p.category}
+          </span>
+
+          <!-- Quick View Trigger -->
+          <button data-detail="${p.id}" aria-label="Quick preview ${p.name}"
+                  class="quickViewBtn absolute bottom-3.5 right-3.5 w-10 h-10 rounded-full bg-paper/90 hover:bg-ink text-ink hover:text-white flex items-center justify-center shadow-md transition-all duration-300 opacity-90 hover:opacity-100 hover:scale-105">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+
+        <!-- Product Content -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-serif text-lg font-semibold text-ink leading-snug group-hover:text-rust transition-colors">${p.name}</h3>
+              <span class="font-serif text-lg text-rust font-semibold shrink-0">$${p.price}</span>
+            </div>
+            <p class="text-xs text-ink/60 mt-1.5 line-clamp-2 leading-relaxed">${p.desc}</p>
+            
+            <div class="mt-3.5 pt-3 border-t border-fog/70 grid grid-cols-2 gap-2 text-[11px] text-ink/75">
+              <div><span class="text-ink/45">Size:</span> ${p.size}</div>
+              <div><span class="text-ink/45">SKU:</span> ${p.sku}</div>
+            </div>
+          </div>
+
+          <!-- Add to Inquiry Button -->
+          <button data-id="${p.id}"
+                  class="cartToggleBtn mt-5 w-full py-3 rounded-full text-xs font-semibold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${inCart ? 'bg-ink text-paper shadow-sm' : 'border border-ink/40 text-ink hover:bg-ink hover:text-paper'}">
+            ${inCart ? '<span>✓ Added to Inquiry</span>' : '<span>+ Add to Inquiry List</span>'}
+          </button>
+        </div>
+      </article>`;
+  }
+
+  function renderGrid() {
+    const allFiltered = getFilteredProducts();
+    const count = allFiltered.length;
+    resultsCount.textContent = `Showing ${Math.min(visibleCount, count)} of ${count} rugs`;
+
+    if (count === 0) {
+      grid.innerHTML = '';
+      emptyState.classList.remove('hidden');
+      loadMoreContainer.classList.add('hidden');
+      return;
+    }
+
+    emptyState.classList.add('hidden');
+    const toRender = allFiltered.slice(0, visibleCount);
+    grid.innerHTML = toRender.map(productCardMarkup).join('');
+
+    if (visibleCount >= count) {
+      loadMoreContainer.classList.add('hidden');
+    } else {
+      loadMoreContainer.classList.remove('hidden');
+      pageStats.textContent = `Viewing ${visibleCount} of ${count} handcrafted rugs`;
+    }
+  }
+
+  loadMoreBtn.addEventListener('click', () => {
+    visibleCount += PAGE_SIZE;
+    renderGrid();
+  });
+
+  // Grid Click Event Delegation (Cart Toggle & Quick View)
+  grid.addEventListener('click', (e) => {
+    const cartBtn = e.target.closest('.cartToggleBtn');
+    if (cartBtn) {
+      toggleCartItem(cartBtn.dataset.id);
+      return;
+    }
+    const quickBtn = e.target.closest('.quickViewBtn');
+    if (quickBtn) {
+      openDetailModal(quickBtn.dataset.detail);
+      return;
+    }
+  });
+
+  /* =================================================================
+     7. QUICK VIEW / PRODUCT DETAIL MODAL
+     ================================================================= */
+  const detailModal = document.getElementById('detailModal');
+  const detailBackdrop = document.getElementById('detailBackdrop');
+  const detailPanel = document.getElementById('detailPanel');
+  const detailImg = document.getElementById('detailImg');
+  const detailBadge = document.getElementById('detailBadge');
+  const detailSku = document.getElementById('detailSku');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailPrice = document.getElementById('detailPrice');
+  const detailDesc = document.getElementById('detailDesc');
+  const detailSize = document.getElementById('detailSize');
+  const detailColor = document.getElementById('detailColor');
+  const detailAddCartBtn = document.getElementById('detailAddCartBtn');
+  const detailWhatsAppBtn = document.getElementById('detailWhatsAppBtn');
+  let currentDetailId = null;
+
+  function openDetailModal(id) {
+    const p = PRODUCTS_BY_ID[id];
+    if (!p) return;
+    currentDetailId = id;
+
+    detailImg.src = p.img;
+    detailImg.alt = p.name;
+    detailBadge.textContent = p.category;
+    detailBadge.style.backgroundColor = p.accent;
+    detailSku.textContent = p.sku;
+    detailTitle.textContent = p.name;
+    detailPrice.textContent = `$${p.price}`;
+    detailDesc.textContent = p.desc;
+    detailSize.textContent = p.size;
+    detailColor.textContent = p.color;
+
+    const inCart = cart.includes(p.id);
+    detailAddCartBtn.textContent = inCart ? '✓ Added to Inquiry List' : 'Add to Inquiry List';
+    detailAddCartBtn.className = inCart
+      ? 'w-full py-3.5 rounded-full text-sm font-semibold bg-rust text-white transition-colors shadow-sm'
+      : 'w-full py-3.5 rounded-full text-sm font-semibold bg-ink text-paper hover:bg-rust transition-colors shadow-sm';
+
+    const waText = encodeURIComponent(`Hello HomeRugDecore, I am interested in inquiring about "${p.name}" (SKU: ${p.sku}, Size: ${p.size}, Price: $${p.price}). Please share details!`);
+    detailWhatsAppBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
+
+    openFade(detailModal, detailPanel, detailBackdrop);
+  }
+
+  detailAddCartBtn.addEventListener('click', () => {
+    if (currentDetailId) {
+      toggleCartItem(currentDetailId);
+      const inCart = cart.includes(currentDetailId);
+      detailAddCartBtn.textContent = inCart ? '✓ Added to Inquiry List' : 'Add to Inquiry List';
+      detailAddCartBtn.className = inCart
+        ? 'w-full py-3.5 rounded-full text-sm font-semibold bg-rust text-white transition-colors shadow-sm'
+        : 'w-full py-3.5 rounded-full text-sm font-semibold bg-ink text-paper hover:bg-rust transition-colors shadow-sm';
+    }
+  });
+
+  document.getElementById('closeDetail').addEventListener('click', () => closeFade(detailModal, detailPanel, detailBackdrop));
+  detailBackdrop.addEventListener('click', () => closeFade(detailModal, detailPanel, detailBackdrop));
+
+  /* =================================================================
+     8. CART & INQUIRY LIST STATE
+     ================================================================= */
+  const cartBadge = document.getElementById('cartBadge');
+  const cartItemsContainer = document.getElementById('cartItems');
+  const cartSubtotalEl = document.getElementById('cartSubtotal');
+  const drawerCartCount = document.getElementById('drawerCartCount');
+  const formCartNotice = document.getElementById('formCartNotice');
+  const formCartCount = document.getElementById('formCartCount');
+  const formCartList = document.getElementById('formCartList');
+  const formRugsField = document.getElementById('formRugsField');
+
+  function toggleCartItem(id) {
+    if (cart.includes(id)) {
+      cart = cart.filter(x => x !== id);
+    } else {
+      cart.push(id);
+    }
+    updateCartUI();
+    renderGrid();
+  }
+
+  function removeCartItem(id) {
+    cart = cart.filter(x => x !== id);
+    updateCartUI();
+    renderGrid();
+  }
+
+  function updateCartUI() {
+    const totalCount = cart.length;
+    cartBadge.textContent = totalCount;
+    cartBadge.classList.toggle('hidden', totalCount === 0);
+    drawerCartCount.textContent = `${totalCount} rug${totalCount === 1 ? '' : 's'} selected`;
+    formCartCount.textContent = `${totalCount} item${totalCount === 1 ? '' : 's'}`;
+
+    if (totalCount === 0) {
+      cartItemsContainer.innerHTML = `<div class="py-16 text-center text-ink/50 text-sm">Your inquiry list is empty.<br>Browse the collection and tap "+ Add to Inquiry".</div>`;
+      cartSubtotalEl.textContent = '$0';
+      formCartList.innerHTML = `<p class="text-ink/50 py-2 italic">No rugs added to inquiry list yet. Browse the collection above to add rugs, or submit a custom inquiry below.</p>`;
+      formRugsField.value = 'None (General Custom Inquiry)';
+      return;
+    }
+
+    let subtotal = 0;
+    const rugDescriptions = [];
+
+    cartItemsContainer.innerHTML = cart.map(id => {
+      const p = PRODUCTS_BY_ID[id];
+      subtotal += p.price;
+      rugDescriptions.push(`${p.name} (SKU: ${p.sku}, Size: ${p.size}, Color: ${p.color}, Price: $${p.price})`);
+
+      return `
+        <div class="flex items-center gap-3.5 p-3 rounded-xl bg-paper border border-fog/80 shadow-xs">
+          <img src="${p.img}" alt="${p.name}" class="w-14 h-14 object-cover rounded-lg border border-fog shrink-0" />
+          <div class="min-w-0 flex-1">
+            <h4 class="font-serif text-sm font-semibold text-ink truncate">${p.name}</h4>
+            <p class="text-[11px] text-ink/55">${p.size} · ${p.sku}</p>
+            <span class="text-xs font-serif text-rust font-semibold">$${p.price}</span>
+          </div>
+          <button data-remove="${p.id}" aria-label="Remove item" class="removeCartBtn p-2 text-ink/40 hover:text-rust transition-colors shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>`;
+    }).join('');
+
+    cartSubtotalEl.textContent = `$${subtotal}`;
+    formRugsField.value = rugDescriptions.join(' | ');
+
+    formCartList.innerHTML = cart.map(id => {
+      const p = PRODUCTS_BY_ID[id];
+      return `
+        <div class="py-1.5 flex items-center justify-between text-xs">
+          <span class="font-medium text-ink truncate">${p.name} (${p.sku})</span>
+          <span class="font-serif text-rust font-semibold ml-2 shrink-0">$${p.price}</span>
+        </div>`;
+    }).join('');
+  }
+
+  cartItemsContainer.addEventListener('click', (e) => {
+    const btn = e.target.closest('.removeCartBtn');
+    if (!btn) return;
+    removeCartItem(btn.dataset.remove);
+  });
+
+  /* =================================================================
+     9. CART DRAWER OPEN / CLOSE
+     ================================================================= */
+  const cartDrawer = document.getElementById('cartDrawer');
+  const cartBackdrop = document.getElementById('cartBackdrop');
+  const cartPanel = document.getElementById('cartPanel');
+
+  document.getElementById('cartToggle').addEventListener('click', () => {
+    updateCartUI();
+    openDrawer(cartDrawer, cartPanel, cartBackdrop);
+  });
+  document.getElementById('closeCart').addEventListener('click', () => closeDrawer(cartDrawer, cartPanel, cartBackdrop));
+  cartBackdrop.addEventListener('click', () => closeDrawer(cartDrawer, cartPanel, cartBackdrop));
+
+  document.getElementById('checkoutInquiryBtn').addEventListener('click', () => {
+    closeDrawer(cartDrawer, cartPanel, cartBackdrop);
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  /* Helper functions for modal & drawer animations */
+  function openFade(modal, panel, backdrop) {
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => {
+      backdrop.classList.remove('opacity-0');
+      panel.classList.remove('opacity-0', 'scale-95');
+    });
+  }
+  function closeFade(modal, panel, backdrop) {
+    backdrop.classList.add('opacity-0');
+    panel.classList.add('opacity-0', 'scale-95');
+    setTimeout(() => { modal.classList.add('hidden'); document.body.style.overflow = ''; }, 320);
+  }
+  function openDrawer(modal, panel, backdrop) {
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => {
+      backdrop.classList.remove('opacity-0');
+      panel.classList.remove('translate-x-full');
+    });
+  }
+  function closeDrawer(modal, panel, backdrop) {
+    backdrop.classList.add('opacity-0');
+    panel.classList.add('translate-x-full');
+    setTimeout(() => { modal.classList.add('hidden'); document.body.style.overflow = ''; }, 320);
+  }
+
+  /* =================================================================
+     10. MOBILE MENU & HEADER SCROLL
+     ================================================================= */
+  const siteHeader = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    siteHeader.classList.toggle('shadow-md', window.scrollY > 20);
+  });
+
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconMenu = document.getElementById('iconMenu');
+  const iconClose = document.getElementById('iconClose');
+
+  menuToggle.addEventListener('click', () => {
+    const isClosed = mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden', !isClosed);
+    iconMenu.classList.toggle('hidden', isClosed);
+    iconClose.classList.toggle('hidden', !isClosed);
+  });
+
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      iconMenu.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  /* =================================================================
+     11. FORM SUBMISSION TO EMAIL (HOMERUGSCREATION@GMAIL.COM)
+     Submits cleanly to FormSubmit endpoint with fallback options
+     ================================================================= */
+  const contactInquiryForm = document.getElementById('contactInquiryForm');
+  const submitInquiryBtn = document.getElementById('submitInquiryBtn');
+  const formStatusMsg = document.getElementById('formStatusMsg');
+  const successModal = document.getElementById('successModal');
+  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${DESTINATION_EMAIL}`;
+
+  contactInquiryForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formStatusMsg.classList.add('hidden');
+    submitInquiryBtn.disabled = true;
+    submitInquiryBtn.innerHTML = `
+      <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Transmitting Inquiry to ${DESTINATION_EMAIL}…`;
+
+    const formData = new FormData(contactInquiryForm);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData,
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok) {
+        contactInquiryForm.reset();
+        cart = [];
+        updateCartUI();
+        renderGrid();
+        openFade(successModal, successModal.querySelector('.modal-panel'), successModal.querySelector('.modal-backdrop'));
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      console.warn('FormSubmit network notice:', err);
+      // Helpful fallback in case of local offline or pending first-time email activation
+      formStatusMsg.classList.remove('hidden');
+      formStatusMsg.innerHTML = `
+        <span class="text-rust font-semibold">Note:</span> If you are testing for the first time or offline, tap the <strong class="underline cursor-pointer" onclick="document.getElementById('directEmailBtn').click()">Open in Email App</strong> button below to dispatch via your default email directly to ${DESTINATION_EMAIL}!`;
+    } finally {
+      submitInquiryBtn.disabled = false;
+      submitInquiryBtn.innerHTML = `<span>Send Inquiry to ${DESTINATION_EMAIL}</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
+    }
+  });
+
+  document.getElementById('closeSuccess').addEventListener('click', () => {
+    closeFade(successModal, successModal.querySelector('.modal-panel'), successModal.querySelector('.modal-backdrop'));
+  });
+
+  // Direct Mailto Trigger
+  document.getElementById('directEmailBtn').addEventListener('click', () => {
+    const name = document.getElementById('cName').value || 'Inquirer';
+    const email = document.getElementById('cEmail').value || 'Not provided';
+    const phone = document.getElementById('cPhone').value || 'Not provided';
+    const country = document.getElementById('cCountry').value || 'Not provided';
+    const notes = document.getElementById('cNotes').value || 'None';
+    const rugs = formRugsField.value;
+
+    const subject = encodeURIComponent(`Rug Order Inquiry from ${name} — HomeRugDecore`);
+    const body = encodeURIComponent(
+      `Hello HomeRugDecore,\n\n` +
+      `I am interested in placing an order/inquiry for the following rugs:\n\n` +
+      `RUGS SELECTED:\n${rugs}\n\n` +
+      `CUSTOMER DETAILS:\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Phone/WhatsApp: ${phone}\n` +
+      `Country: ${country}\n` +
+      `Notes / Custom Requests: ${notes}\n\n` +
+      `Please reply with pricing and delivery timeline.\nThank you!`
+    );
+
+    window.location.href = `mailto:${DESTINATION_EMAIL}?subject=${subject}&body=${body}`;
+  });
+
+  // Direct WhatsApp Trigger
+  document.getElementById('directWhatsAppBtn').addEventListener('click', () => {
+    const name = document.getElementById('cName').value || 'Customer';
+    const country = document.getElementById('cCountry').value || '';
+    const rugs = formRugsField.value;
+
+    const text = encodeURIComponent(
+      `Hello HomeRugDecore! I would like to inquire about the following rugs:\n\n` +
+      `${rugs}\n\n` +
+      `Name: ${name} (${country})\n` +
+      `Please let me know the availability and pricing!`
+    );
+
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+  });
+
+  // Global escape key listener
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (!cartDrawer.classList.contains('hidden')) closeDrawer(cartDrawer, cartPanel, cartBackdrop);
+      if (!detailModal.classList.contains('hidden')) closeFade(detailModal, detailPanel, detailBackdrop);
+      if (!successModal.classList.contains('hidden')) closeFade(successModal, successModal.querySelector('.modal-panel'), successModal.querySelector('.modal-backdrop'));
+    }
+  });
+
+  /* =================================================================
+     12. INITIALIZATION
+     ================================================================= */
+  updatePillStyles();
+  updateCartUI();
+  renderGrid();
+</script>
+
+</body>
+</html>
